@@ -1,5 +1,7 @@
 # docker-http
 
+[![Docker](https://github.com/chorrell/docker-httpie/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/chorrell/docker-httpie/actions/workflows/docker-publish.yml)
+
 A docker image for [httpie](https://httpie.io)
 
 ## Usage with Docker run
