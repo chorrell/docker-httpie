@@ -50,7 +50,8 @@ alias http='docker run -i --rm http'
 
 ## Using the Docker Hub image
 
-The lateset version of this image is published to the Docker Hub. You can use it like this:
+The lateset version of this image is published to the Docker Hub. You can use
+it like this:
 
 ```sh
 docker pull chorrell/http:latest
@@ -66,7 +67,8 @@ alias http='docker run -i --rm ghcr.io/chorrell/http:latest'
 
 ## Using the GitHub Container Registry image
 
-The lateset version of this image is published to the GitHub Container Registry. You can use it like this:
+The lateset version of this image is published to the GitHub Container
+Registry. You can use it like this:
 
 ```sh
 docker pull ghcr.io/chorrell/http:latest
