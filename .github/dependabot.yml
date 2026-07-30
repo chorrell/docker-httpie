@@ -3,7 +3,11 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "monthly"
+    groups:
+      monthly-batch:
+        patterns:
+          - "*"
     cooldown:
       default-days: 7
     pull-request-branch-name:
@@ -15,7 +19,11 @@ updates:
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "monthly"
+    groups:
+      monthly-batch:
+        patterns:
+          - "*"
     cooldown:
       default-days: 7
     pull-request-branch-name:
