@@ -36,8 +36,12 @@ docker run -it --rm http --headers https://horrell.ca
 ## CI/CD
 
 - `docker-publish.yml`: builds the image, tests it, and pushes to Docker Hub
-  (`chorrell/http`) and GHCR (`ghcr.io/chorrell/http`) on merge to `main`.
-- `shellcheck.yml`: lints shell scripts on PRs.
+  (`chorrell/http`) and GHCR (`ghcr.io/chorrell/http`) on merge to `main`,
+  with provenance attestations in both. It calls the shared
+  [chorrell/workflows](https://github.com/chorrell/workflows) `docker-publish`
+  workflow; GHCR uses `GITHUB_TOKEN`, so the `http` package must grant this
+  repo write access (Package settings → Manage Actions access).
+- `shellcheck.yml`: lints shell scripts on PRs (shared `shell-lint` workflow).
 
 ## Contributing
 
