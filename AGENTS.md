@@ -49,6 +49,6 @@ docker run -it --rm http --headers https://horrell.ca
 ## Contributing
 
 1. Branch from `main`.
-2. Run `pre-commit run --all-files` before committing.
+2. Run `prek run --all-files` before committing.
 3. Verify locally: `docker build -t http . && docker run -it --rm http --version`.
 4. Open a PR; CI runs the build/test and shellcheck workflows.
